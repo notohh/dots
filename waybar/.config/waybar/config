@@ -6,9 +6,9 @@
     "width": 1879, // Waybar width
     "spacing": 10, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["user", "image/cherry-blossom", "hyprland/window"],
+    "modules-left": ["user", "hyprland/window"],
     "modules-center": ["custom/spotify"],
-    "modules-right": ["pulseaudio", "cpu", "memory", "custom/pacman", "clock", "tray", "custom/wlogout"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "clock", "tray", "custom/wlogout"],
     // Modules configuration
 
     "keyboard-state": {
@@ -171,7 +171,6 @@
         "interval": 60,
         "height": 15,
         "width": 15,
-        "icon": true,
 },
 
     "custom/wlogout": {
@@ -195,4 +194,4 @@
        
            }
 
-   }
+   }x
