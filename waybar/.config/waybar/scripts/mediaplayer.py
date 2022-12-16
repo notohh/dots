@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/nix/store/nihxxjfp4f6p5ffzd6zng9y4ckjdg2ni-system-path/bin/env python3
 import argparse
 import logging
 import sys

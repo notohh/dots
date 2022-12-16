@@ -6,7 +6,7 @@
     "width": 1879, // Waybar width
     "spacing": 10, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["user", "hyprland/window"],
+    "modules-left": [ "user", "hyprland/window"],
     "modules-center": ["custom/spotify"],
     "modules-right": ["pulseaudio", "cpu", "memory", "clock", "tray", "custom/wlogout"],
     // Modules configuration
@@ -151,7 +151,7 @@
     },
 
 "hyprland/window": {
-    "format": "{}",
+    "format": " {}",
     "separate-outputs": true,
 
 },
