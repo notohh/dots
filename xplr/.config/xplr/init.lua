@@ -84,7 +84,7 @@ xplr.config.general.read_only = false
 -- from yourself when you type recklessly.
 --
 -- Type: boolean
-xplr.config.general.enable_recover_mode = false
+xplr.config.general.enable_recover_mode = true
 
 -- Set it to `true` if you want to hide all remaps in the help menu.
 --
@@ -2705,6 +2705,35 @@ xplr.fn.custom = {}
 --   }
 -- }
 -- ```
+--
+local home = os.getenv("HOME")
+local xpm_path = home .. "/.local/share/xplr/dtomvan/xpm.xplr"
+local xpm_url = "https://github.com/dtomvan/xpm.xplr"
+
+package.path = package.path
+  .. ";"
+  .. xpm_path
+  .. "/?.lua;"
+  .. xpm_path
+  .. "/?/init.lua"
+
+os.execute(
+  string.format(
+    "[ -e '%s' ] || git clone '%s' '%s'",
+    xpm_path,
+    xpm_url,
+    xpm_path
+  )
+)
+
+require('xpm').setup {
+  'dtomvan/xpm.xplr',
+  { 'dtomvan/extra-icons.xplr',
+      after = function()
+          xplr.config.general.table.row.cols[2] = { format = "custom.icons_dtomvan_col_1" }
+      end
+  },
+}
 
 return {
   on_load = {},
