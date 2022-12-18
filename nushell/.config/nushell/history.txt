@@ -1,6 +1,1 @@
 history --clear
-cd dots/
-touch .gitignore
-v .gitignore
-ls
-v .gitignore
