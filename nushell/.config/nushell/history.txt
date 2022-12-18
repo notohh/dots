@@ -1,0 +1,110 @@
+cd
+cd .config/zathura/
+ls
+cd
+cd flake/
+v configuration.nix
+nvim configuration.nix
+sudo nixos-rebuild switch --flake .#nixos
+nvim configuration.nix
+sudo nixos-rebuild switch --flake .#nixos
+$nu.config-path
+cd .config/nushell/
+ls
+nvim env.nu
+nvim config.nu
+cd .config/nushell/
+ls
+cd ~/.cache/
+ls
+cd starship/
+ls
+nvim env.nu
+reboot
+cd .config/nushell/
+ls
+nvim env.nu
+nvim config.nu
+config nu
+cd .config/nushell/
+ls
+nvim config.nu
+config nu
+echo $nu.env-path
+cd .config/nushell/
+ls
+nvim env.nu
+neofetch 
+nvim config.nu
+config nu
+nvim env.nu
+cd .config/nushell/
+ls
+nvim env.nu
+nvim config.nu
+cd .config/nushell/
+nvim config.nu
+cd .config/nushell/
+nvim config.nu
+cd .config/nushell/
+nvim config.nu
+config set prompt "starship prompt"
+cd .config/nushell/
+cd .cache/starship/
+ls
+nvim config.nu
+cd .config/nushell/
+nvim config.nu
+cd .config/nushell/
+cd .config/nvim/
+ls
+cd plugin/
+ls
+cd ..
+cd lua/
+ls
+cd plugins/
+ls
+nvim init.lua
+cd
+cd .config/nushell/
+ls
+nvim config.nu
+cd .config/nushell/
+nvim env.nu
+cd .config/nushell/
+nvim env.nu
+neofetch 
+nvim config.nu
+ls
+fish
+cd flake/
+nvim configuration.nix
+cd
+cd .config/nushell/
+nvim config.nu
+cd .config/nushell/
+v config.nu
+neofetch 
+cd dots/
+ls
+cd
+cd dots
+mkdir nushell
+cd nushell/
+mkdir .config
+cd
+cd .config/
+xplr
+cd
+cd .config/
+cd
+cd dots/
+ls
+rm -rf fish
+cd .config/
+ls
+cd fish/
+ls
+cd ..
+rm -rf fish
