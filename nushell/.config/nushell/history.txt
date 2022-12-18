@@ -1,1 +1,15 @@
 history --clear
+cd 
+cd .config/
+cd
+cd dots/
+cd nushell/
+ls
+cd .config/
+ls
+cd nushell/
+ls
+mv .gitignore ~/dots/
+cd
+cd dots/
+rm -rf .gitignore
