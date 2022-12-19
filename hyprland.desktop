@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Hyprland
-Comment=An intelligent dynamic tiling Wayland compositor
-Exec=/home/notoh/.local/bin/wrappedh1.sh
-Type=Application
