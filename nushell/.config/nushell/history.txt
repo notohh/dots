@@ -1,1 +1,1 @@
-cd dots/
+v .gitignore
