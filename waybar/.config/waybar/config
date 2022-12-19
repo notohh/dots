@@ -1,13 +1,14 @@
 {
      "layer": "top", // Waybar at top layer
         "output": "DP-3",
-     "position": "top", // Waybar position (top|bottom|left|right)
+    "position": "top", // Waybar position (top|bottom|left|right)
     "height": 35, // Waybar height (to be removed for auto height)
     "width": 1879, // Waybar width
     "spacing": 10, // Gaps between modules (4px)
+    "margin-top": 8,
     // Choose the order of the modules
-    "modules-left": [ "user", "hyprland/window"],
-    "modules-center": ["custom/spotify"],
+    "modules-left": [ "custom/launcher", "user", "custom/spotify" ],
+    "modules-center": [ "hyprland/window" ],
     "modules-right": ["pulseaudio", "cpu", "memory", "clock", "tray", "custom/wlogout"],
     // Modules configuration
 
@@ -140,7 +141,7 @@
     },
 
     "custom/spotify": {
-    "exec": "/usr/bin/python3 ~/.config/waybar/scripts/mediaplayer.py --player spotifyd",
+    "exec": "/usr/bin/python3 ~/.config/waybar/scripts/mediaplayer.py --player spotifu",
     "format": "{}  ",
     "return-type": "json",
     "on-click": "playerctl play-pause",
@@ -153,6 +154,8 @@
 "hyprland/window": {
     "format": " {}",
     "separate-outputs": true,
+    "max-length": 35,
+    
 
 },
 
@@ -169,15 +172,21 @@
 "user": {
         "format": "{user} (up {work_H} hrs, {work_d} days ↑)",
         "interval": 60,
-        "height": 15,
-        "width": 15,
+        "icon": false,
 },
 
     "custom/wlogout": {
         "format": "",
         "interval": "once",
         "on-click": "wlogout -c 5 -r 5",
-        "tooltip": "false"
+        "tooltip": "false",
+    },
+
+        "custom/launcher": {
+        "format": "",
+        "interval": "once",
+        "tooltip": "false",
+        "on-click": "~/.config/waybar/scripts/wallpaper.sh",
     },
 
     "custom/media": {
@@ -189,6 +198,8 @@
             "default": "🎜"
         },
 
+
+
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name 
@@ -196,3 +207,4 @@
            }
 
    }
+

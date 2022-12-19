@@ -2,20 +2,23 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, JetBrains Mono, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    border-radius: 5px;
+    font-family: FontAwesome, JetBrainsMono Nerd Font, JetBrains Mono, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    border-radius: 6px;
     padding-bottom: 3px;
     padding-right: 7px;
     padding-left: 7px;
-    padding-top: 2px;
-}
+    padding-top: 3px;
+    min-height: 0px;
+  }
 
 window#waybar {
-    background-color: rgb(17, 17, 27);
-    border-bottom: 2px solid rgb(245, 194, 231);
+    background-color: rgb(30, 30, 46);
+    border-radius: 21px;
+    border-bottom: 3px solid rgb(245, 194, 231);
     border-left: 3px solid rgb(245, 194, 231);
     border-right: 3px solid rgb(245, 194, 231);
+    border-top: 3px solid rgb(245, 194, 231);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -97,8 +100,9 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-    padding: 0 10px;
+    padding: 0 5px;
     color: #ffffff;
+
 }
 
 #window,
@@ -116,7 +120,7 @@ button:hover {
     margin-right: 0;
 }
 
-.custom-spotifyd {
+#custom-spotify {
     padding: 0 10px;
     margin: 0 4px;
     background-color: #a6e3a1;
@@ -228,7 +232,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #585b70;
+    background-color: transparent;
 }
 
 #tray > .passive {
@@ -301,19 +305,27 @@ label:focus {
 #window {
     background: #f5c2e7;
     color: black;
-    padding-left:  5px;
-    padding-right: 5px;
-    
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #custom-pacman {
     background: #f38ba8;
     color: black;
-
 }
 
 #user {
     background: #f5c2e7;
     color: black;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+#custom-wlogout {
+  font-size: 15px;
+}
+
+#custom-launcher {
+  font-size: 20px; 
+  color: #7eb8e2;
+}
