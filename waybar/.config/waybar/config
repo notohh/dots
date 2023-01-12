@@ -141,7 +141,7 @@
     },
 
     "custom/spotify": {
-    "exec": "/usr/bin/python3 ~/.config/waybar/scripts/mediaplayer.py --player spotifu",
+    "exec": "/nix/store/7j7bdcb7b471j8bpz5pmc9ivqqiy1cb9-system-path/bin/python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
     "format": "{}  ",
     "return-type": "json",
     "on-click": "playerctl play-pause",
