@@ -1,4 +1,1 @@
-<h1 align="center">
-<img src="https://cdn.7tv.app/emote/62894255ce2df92d956468e3/3x.webp"></img>
-</h1>
-<p align="center">will be reconfigured in nix soon™️</p>
+# 99% of my dots are reconfigured in nix [here](https://github.com/notohh/snowflake/tree/master/modules/home)
